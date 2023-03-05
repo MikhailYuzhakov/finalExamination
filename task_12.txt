@@ -1,0 +1,17 @@
+USE humansfriends;
+DROP TABLE IF EXISTS allin;
+CREATE TABLE allin AS
+    SELECT pets.Type as TableName, cats.Name, cats.Age, cats.cmd 
+        FROM pets, cats WHERE pets.Type='cats' AND pets.ID=cats.ID
+    UNION
+    SELECT pets.Type as TableName, dogs.Name, dogs.Age, dogs.cmd 
+        FROM pets, dogs WHERE pets.Type='dogs' AND pets.ID=dogs.ID
+    UNION
+    SELECT pets.Type as TableName, humsters.Name, humsters.Age, humsters.cmd 
+        FROM pets, humsters WHERE pets.Type='humsters' AND pets.ID=humsters.ID
+    UNION
+    SELECT packanimals.Type as TableName, horses.Name, horses.Age, horses.cmd 
+        FROM packanimals, horses WHERE packanimals.Type='horses' AND packanimals.ID=horses.ID
+    UNION
+    SELECT packanimals.Type as TableName, donkeys.Name, donkeys.Age, donkeys.cmd 
+        FROM packanimals, donkeys WHERE packanimals.Type='donkeys' AND packanimals.ID=donkeys.ID
