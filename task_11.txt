@@ -1,0 +1,9 @@
+USE humansfriends;
+CREATE TABLE young_animals AS
+    SELECT * FROM humsters WHERE Age < 3 AND Age > 1
+    UNION
+    SELECT * FROM cats WHERE Age > 1 AND Age < 3
+    UNION
+    SELECT * FROM dogs WHERE Age > 1 AND Age < 3
+    UNION
+    SELECT * FROM horses_and_donkeys WHERE Age > 1 AND Age < 3;
