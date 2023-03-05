@@ -1,0 +1,8 @@
+USE humansfriends;
+DELETE FROM packanimals WHERE Type='camels';
+DROP TABLE camels;
+
+CREATE TABLE horses_and_donkeys AS
+  SELECT * FROM horses
+  UNION
+  SELECT * FROM donkeys;
