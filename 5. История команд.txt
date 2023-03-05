@@ -1,0 +1,29 @@
+ 1788  mkdir itog
+ 1789  cd itog/
+ 1790  ll
+ 1791  clear
+ 1792  cat Pets
+ 1793  cat Pets >
+ 1794  cat > Pets
+ 1795  cat Pets
+ 1796  cat > Pack Animals
+ 1797  cat > PackAnimals
+ 1798  cat Pets PackAnimals HumansFriends
+ 1799  cat Pets PackAnimals > HumansFriends
+ 1800  ll
+ 1801  cat HumansFriends
+ 1802  mkdir db
+ 1803  mv HumansFriends db\HumansFriends
+ 1804  ll
+ 1805  mv HumansFriends db/HumansFriends
+ 1806  mv HumansFriends db/
+ 1807  mv dbHumansFriends db/
+ 1808  ll
+ 1809  cd db
+ 1810  ll
+ 1811  wget https://dev.mysql.com/get/mysql-apt-config_0.8.15-1_all.deb
+ 1812  sudo dpkg -i mysql-apt-config_0.8.15-1_all.deb
+ 1813  dpkg -r mysql
+ 1814  sudo dpkg -r mysql
+ 1815  clear
+ 1816  history
